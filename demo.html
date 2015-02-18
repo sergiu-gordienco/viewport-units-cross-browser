@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Viewport units test</title>
+		<script src="viewport-units.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			viewportUnits.init({
+				// default 900ms
+				// and on orintationchange and resize events
+				refresh		: 1000,
+				// stop viewportUnits support on css error
+				// default false
+				onErrorStop	: false
+			})
+		</script>
+		<style type="text/css" application-style="viewport-units">
+			html, body {
+				background	: #dedede;
+				color		: #c0c0c0;
+			}
+
+			#message {
+				line-height	: 60vh;
+				font-size	: 27vh;
+
+				margin-top	: 20vh;
+
+				text-align	: center;
+				font-weight	: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="message">My Message</div>
+	</body>
+</html>
