@@ -72,8 +72,8 @@
 })();
 
 if (typeof(window.getWindowSize) !== "function") {
-	var getWindowSize_v = {w:800,h:600};
-	var getWindowSize_limit	= {
+	window.getWindowSize_v = {w:800,h:600};
+	window.getWindowSize_limit	= {
 		min	: {
 			w	: false,
 			h	: false
