@@ -37,7 +37,9 @@ Add ``application-style="viewport-units"`` attribute to style element.
 
 ```html
 <style type="text/css" application-style="viewport-units">
-
+	body {
+		font-size   : 27vh;
+	}
 </style>
 ```
 
