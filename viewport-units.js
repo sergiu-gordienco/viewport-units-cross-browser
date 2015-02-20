@@ -132,7 +132,7 @@ if (typeof(window.getWindowSize) !== "function") {
 		return size;
 	};
 	getWindowSize_v = ((function(){var e;try{return getWindowSize_f()}catch(e){return {w:240,h:360}}})());
-	function getWindowSize(i){if(i)return getWindowSize_f();return getWindowSize_v;};
+	window.getWindowSize	= function (i){if(i)return getWindowSize_f();return getWindowSize_v;};
 	setInterval(function() {
 		getWindowSize_v = getWindowSize(true);
 	}, 1000);
