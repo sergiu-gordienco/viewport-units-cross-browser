@@ -184,7 +184,7 @@ var viewportUnits	= ((function () {
 		return list;
 	};
 	methods.updateStyle	= function (css) {
-		var win	= getWindowSize();
+		var win	= getWindowSize(true);
 		// console.log(css.replace(/((?=[\d\.])[\d\.]+(vh|vmin|vw|vmax)(?![\/\*]))/gi, function (m0, m1, m2, offset, str) {
 		// 	return m1 + '/*viewport-hack:'+m1+'*/';
 		// }));
